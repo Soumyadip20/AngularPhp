@@ -1,0 +1,24 @@
+<div class = "container" style="padding-top: 25px">
+    <div><h1 style="text-align: center;">Edit Policy</h1></div>
+    <form [formGroup] = "addForm" novalidate class = "form">
+        <div class="form-group">
+            <label>Id</label>
+            <input type="text" class="form-control" name="id" formControlName="id" placeholder="Enter Id" readonly>
+            
+          </div>
+        <div class="form-group">
+            <label >Number</label>
+            <input type="text" class="form-control" name="number" formControlName="number" placeholder="Enter Number">
+            
+          </div>
+        <div class="form-group">
+            <label>Amount</label>
+            <input type="text" class="form-control" name="amount" formControlName="amount" placeholder="Enter Amount">
+            
+          </div>
+       
+          
+          <button (click)="onEdit()" type="submit" class="btn btn-primary">Edit</button>
+          
+    </form>
+    </div>
